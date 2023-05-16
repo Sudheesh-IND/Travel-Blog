@@ -1,0 +1,780 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+#home{
+    width: 100vw;
+    height: 100vh;
+   
+    
+    display: flex;
+    min-width: auto;
+    min-height: auto;
+    
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    margin-left: 0;
+    padding-left: 0;
+    overflow: hidden;
+    min-width: auto;
+    min-height: auto;
+}
+.container-fluid .row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    min-width: auto;
+    min-height: auto;
+    
+    
+}
+
+.home-pic{
+    width: 100%;
+    height: 100%;
+    background-image: url(./image/home\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    min-width: auto;
+    min-height: auto;
+     
+     
+   
+}
+
+/* navbar */
+.navbar-brand{
+    font-size: 34px;
+    font-weight: bolder;
+    color: black;
+    display: inline;
+    letter-spacing: 1.75px;
+    line-height: 34px;
+    font-family: 'PT Sans', sans-serif;
+
+}
+#home-item{
+   color: black;
+   padding: 0.5rem;
+}
+#home-item:hover{
+    background-color: black;
+    color: white;
+}
+#nav-about,#nav-blog,#nav-travel,#nav-shop,#nav-places{
+    color: black;
+}
+#nav-about:hover,#nav-blog:hover,#nav-shop:hover,#nav-travel:hover,#nav-places:hover{
+    color: orangered;
+}
+/* philosophy */
+
+#philosophy .container{
+    height: 700px;
+    display: flex;
+    min-width: auto;
+    min-height: auto;
+}
+#philosophy .container .row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 6rem;
+    min-width: auto;
+    min-height: auto;
+}
+#philosophy .container .row .philo-description{
+    height: 340px;
+   
+    
+    min-width: auto;
+    min-height: auto;
+
+}
+#philosophy .container .row .philo-pic{
+    height: 450px;
+    display: flex;
+  
+    padding: 20px;
+   
+    position: relative;
+    min-height: auto;
+    min-width: auto;
+   
+}
+.philo-pic img{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+    height: 410px;
+    min-height: auto;
+    min-width: auto;
+
+    
+}
+.philo-pic-text{
+    width: 302px;
+    height: 125px;
+    background-color: #eae0d7;
+    position: absolute;
+    top: 170px;
+    left: 170px;
+    z-index: 2;
+    min-width: auto;
+    min-height: auto;
+    box-sizing: border-box;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.philo-text-heading{
+    text-align: center;
+    font-size: 17px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+    
+    
+}
+.philo-text-button{
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    height: 18px;
+    width: 53px;
+    font-size: 8px;
+    border: none;
+
+}
+.philo-description-text{
+    font-size: 17px;
+    letter-spacing: 0.35px;
+    line-height: 27.2px;
+    font-family: 'PT Sans', sans-serif;
+}
+.philo-description-bolder{
+    font-size: 17px;
+    letter-spacing: 2px;
+    line-height: 27.2px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+}
+.philo-icon-1{
+    width: 35px;
+    height: 35px;
+    background-color: aliceblue;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+.philo-icons{
+    text-decoration: none;
+     /* color: black; */
+    font-size: 1.2rem;
+}
+.philo-icon-2{
+    width: 35px;
+    height: 35px;
+    background-color: aliceblue;
+    display: flex;
+    position: relative;
+    left: 50px;
+    bottom: 35px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+.philo-icon-3{
+    width: 35px;
+    height: 35px;
+    background-color: aliceblue;
+    display: flex;
+    position: relative;
+    left: 100px;
+    bottom: 70px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+.philo-icon-4{
+    width: 35px;
+    height: 35px;
+    background-color: aliceblue;
+    display: flex;
+    position: relative;
+    left: 150px;
+    bottom: 105px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+.philo-icon-1:hover, .philo-icon-2:hover,.philo-icon-3:hover,.philo-icon-4:hover{
+    background-color: black;
+}
+.philo-icon-2:hover .philo-icons{
+    filter: brightness(100);
+   
+}
+.philo-icon-1:hover .philo-icons{
+    filter: brightness(100);
+}
+.philo-icon-3:hover .philo-icons{
+    filter: brightness(100);
+}
+.philo-icon-4:hover .philo-icons{
+    filter: brightness(100);
+}
+#logo-image.container.row .img-part{
+    width: 100%;
+    height: 108px;
+   
+}
+#logo-image .container .row img{
+    
+    height: 100%;
+    width: 100%;
+}
+#latest{
+    margin-top: 150px;
+}
+.latest-title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    line-height: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+#latest a{
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1.15px;
+    line-height: 16.8px;
+    text-align: center;
+}
+.search-bar .search-bar-button{
+   
+    margin-bottom: 50px;
+}
+#sign-up{
+    width: 100vw;
+    height: 576px;
+    
+    min-width: auto;
+    min-height: auto;
+    display: flex;
+}
+
+
+
+.sign-up-description{
+    width: 100%;
+    height: 576px;
+    object-fit: cover;
+    min-width: auto;
+    min-height: auto;
+    display: flex;
+    position: relative;
+   
+}
+.signup-portion{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.signup-heading{
+    font-size: 68px;
+    color: white;
+    letter-spacing: 0.27px;
+    line-height: 68px;
+    font-weight: normal;
+    font-family: 'PT Sans', sans-serif;
+}
+.signup-para{
+    font-size: 16px;
+    letter-spacing: 3.65px;
+    line-height: 16px;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 10px;
+}
+.signup-link{
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 3.65px;
+    line-height: 16px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-bottom: 4px solid #f8cdaa;
+}
+.italy-background{
+   
+    
+    width: 100%;
+    height: 576px;
+    object-fit: cover;
+    min-width: auto;
+    min-height: auto;
+    display: flex;
+    position: relative;
+   
+
+}
+.italy-portion{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signup-portion{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wonderful-para-1{
+    margin-top: 100px;
+    font-size: 17px;
+    letter-spacing: 0.35px;
+    line-height: 27px;
+    font-family: 'PT Sans', sans-serif;
+}
+.wonderful-para-2{
+    font-size: 17px;
+    letter-spacing: 0.35px;
+    line-height: 27px;
+    font-family: 'PT Sans', sans-serif;
+}
+.wonderful-para-2 a{
+    text-decoration: none;
+    border-bottom: 3px solid #f8cdaa;
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+    font-size: 17px;
+    letter-spacing: 0.35px;
+    line-height: 27px;
+
+}
+#wonderful .card{
+    position: relative;
+}
+#wonderful .card .wonderful-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wonderful-pic-heading{
+    font-size:25px;
+    color: white;
+    letter-spacing: 0.35px;
+    line-height: 27.2px;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+/* north coast */
+
+#north-coast{
+    width: 100vw;
+    height: 612px;
+}
+.north-coast-div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-width: auto;
+    min-height: auto;
+    display: flex;
+    
+    
+}
+.north-coast-div img{
+    width: 100%;
+    height: 100%;
+    min-width: auto;
+    min-height: auto;
+    object-fit: cover;
+    object-position: bottom;
+}
+.north-coast-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.north-coast-para-1{
+    text-align: center;
+    font-size: 17px;
+    margin-top: 100px;
+    line-height: 27px;
+    letter-spacing: 0.35px;
+    font-family: 'PT Sans', sans-serif;
+
+}
+.north-coast-para-2{
+    text-align: center;
+    font-size: 17px;
+  
+    line-height: 27px;
+    letter-spacing: 0.35px;
+    font-family: 'PT Sans', sans-serif;
+}
+#north-coast-pics .card{
+    width: 318px;
+    height: 318px;
+    border: none;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    
+}
+.North-coast-pic-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    
+}
+.northcoast-pic-heading{
+    font-size:25px;
+    color: white;
+    letter-spacing: 0.35px;
+    line-height: 27.2px;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+
+/* print-store */
+
+#print-store{
+    width: 100vw;
+    height: 576px;
+    min-width: auto;
+    min-height: auto;
+}
+.print-store-pic{
+    width: 100%;
+    height: 100%;
+    min-width: auto;
+    min-height: auto;
+    position: relative;
+}
+.print-store-pic-size{
+    width: 100%;
+    height: 100%;
+    min-width: auto;
+    min-height: auto;
+    object-fit: cover;
+}
+.print-store-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.print-store-heading{
+    font-size: 68px;
+    color: white;
+    letter-spacing: 0.27px;
+    line-height: 68px;
+    font-weight: normal;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* travel journals */
+#travel-journals,#our-story,#travel-resources{
+    width: 100vw;
+    height: 612px;
+    min-width: auto;
+    min-height: auto;
+    object-fit: cover;
+}
+.travel-journals-pic,.our-story-pic,.travel-resources-pic{
+    width: 100vw;
+    height: 612px;
+    min-width: auto;
+    min-height: auto;
+    position: relative;
+    object-fit: scale-down cover;
+    overflow: hidden;
+ 
+    /* background-image: url(./image/our-story-pic.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-position: center; */
+    
+    
+    
+}
+.travel-journals-pic-size,.our-story-pic-size,.travel-resources-pic-size{
+    width: 100vw;
+    height: 100%;
+    min-width: auto;
+    min-height: auto;
+    object-fit: cover;
+    object-position: center;
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    object-position: bottom;
+
+    
+    
+   
+}
+.travel-journals-content,.our-story-content,.travel-resources-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#activities .card .card-text{
+    font-size: 13px;
+    letter-spacing: 1.17px;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 15.6px;
+
+}
+.story-button{
+    width: 145px;
+    height: 45px;
+    padding: 14px 25px 14px 25px;
+    margin: 10px;
+    border:2px solid white;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+   
+    border-bottom: 14px solid #f8cdaa;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    transform: scale(0.5s);
+}
+.story-button:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+/* peru */
+
+.peru-heading{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 27.2px;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+.peru-link{
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid #f8cdaa;
+
+}
+#peru img{
+    width: 230px;
+    height: 310px;
+}
+#peru .card-title{
+     font-size: 17px;
+     font-weight: 500;
+     letter-spacing: 2px;
+     line-height: 27.2px;
+     font-family: 'PT Sans', sans-serif;
+     margin-top: 20px;
+}
+#peru .card-text{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    line-height: 27.2px;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 20px;
+}
+.peru-button{
+    height: 40px;
+    width: 100px;
+    letter-spacing: 1px;
+    padding: 7px;
+    font-size: 12px;
+    border: 2px solid #e7ddd4;
+    margin-top: 10px;
+    background-color: white;
+    color: #e7ddd4;
+    transform: scale(0.3s);
+}
+.peru-button:hover{
+     transition: 0.5s;
+     background-color: #e7ddd4;
+     color: black;
+}
+
+/* card */
+
+#instagram .card{
+    height: 161px;
+    width: 161px;
+
+}
+#instagram .card {
+    width: 100%;
+    height: 100%;
+}
+.insta-para{
+    font-size: 17px;
+    font-style: italic;
+    letter-spacing: 0.35px;
+    line-height: 27.2px;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* footer */
+
+#link-footer{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    min-height: auto;
+    min-width: auto;
+}
+
+#link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4efeb;
+}
+.link-container a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 18.75px;
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+    transform: scale(0.5s);
+}
+.link-container a:hover{
+    color: #f8cdaa;
+    transition: 0.5s;
+}
+#main-footer{
+    width: 100%;
+    
+    background-color: #f4efeb;
+    max-height: 200%;
+}
+.logo-para{
+    font-size: 17px;
+    letter-spacing: 0.35px;
+    line-height: 27.2px;
+    font-family: 'PT Sans', sans-serif;
+}
+.country-heading{
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 2px;
+    line-height: 27.2px;
+}
+.country-links{
+    font-size: 17px;
+    
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 0.35px;
+    line-height: 27.2px;
+    text-decoration: none;
+   
+    color: black;
+    text-transform: uppercase;
+    border-bottom: 4px solid #f8cdaa;
+}
+.copyright-heading{
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.35px;
+    line-height: 27px;
+    font-family: 'PT Sans', sans-serif;
+}
+.copyright-input{
+       height: 51px;
+       width: 250px;
+       border: 1px solid white;
+       background-color: white;
+       padding-left: 15px;
+}
+.copyright-button{
+    height: 28px;
+    width: 81px;
+    background-color: black;
+    color: white;
+    font-size: 8px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 1rem;
+    letter-spacing: 1.44px;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+.copyright-button:hover{
+    background-color: rgb(35, 35, 35);
+}

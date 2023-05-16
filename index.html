@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Along Dusty Roads</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <link rel="icon" type="image.jpg" href="data:image/jpeg;base64,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">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Dancing+Script:wght@600&family=Fugaz+One&family=Gloria+Hallelujah&family=Kaushan+Script&family=Lobster+Two:ital,wght@0,400;1,700&family=Marck+Script&family=Merriweather&family=Monoton&family=Montserrat:wght@500&family=PT+Sans&family=Rajdhani&family=Russo+One&family=Satisfy&family=Tangerine:wght@700&family=Ysabeau:wght@500&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+
+</head>
+<body>
+   <section id="home">
+    <div class="container-fluid home-pic">
+        <div class="row">
+            <div class="col-12 col-sm-12 ">
+                 <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong fixed-top pt-4 ps-2 pe-2">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand " style="font-size: 34px;font-family: 'PT Sans', sans-serif;
+      color: black; font-weight: 500;" href="#">ALONG DUSTY ROADS</a>
+  
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ps-3 ">
+          <li class="nav-item">
+            <a class="nav-link " style=" display: block;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'PT Sans', sans-serif;
+            line-height: 16px;
+             padding-right: 2rem;" id="nav-about"  href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style=" display: block;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'PT Sans', sans-serif;
+            line-height: 16px;
+             padding-right: 2rem;" id="nav-blog" href="#">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style=" display: block;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'PT Sans', sans-serif;
+            line-height: 16px;
+             padding-right: 2rem;" id="nav-travel" href="#">TRAVEL RESOURCES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style=" display: block;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'PT Sans', sans-serif;
+            line-height: 16px;
+             padding-right: 2rem;" id="nav-places" href="#">PLACES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style=" display: block;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'PT Sans', sans-serif;
+            line-height: 16px;
+             padding-right: 2rem;" id="nav-shop" href="#">SHOP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center" style=" display: block;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'PT Sans', sans-serif;
+            line-height: 16px;
+             padding-right: 2rem; border: 2px solid black; margin-right: 1rem;
+            padding-left: 2rem;" id="home-item" href="#">HOME</a>
+          </li>
+    
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+            </div>
+        </div>
+       
+    </div>
+   </section>
+<!-- philosophy -->
+     <section id="philosophy">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 philo-description">
+                    <p class="philo-description-text">Along Dusty Roads brings you the beauty of a life of travel, personally curated by us, Andrew & Emily.</p>
+                   <p class="philo-description-text">  Our crafted guides, thoughtful narratives, and original photography journals wed wanderlust and practical advice to help and inspire curious travellers like you to make the most of your own slow, sustainable adventures. <br> <br>
+                    <span class="philo-description-bolder">WE WANT TO HELP YOU TO TRAVEL MORE, TRAVEL BETTER.</span>
+             </p>
+             <div class="rounded-circle philo-icon-1">
+                <a href=""><i class="fa-brands fa-instagram philo-icons"></i></a>
+             </div>
+             <div class="rounded-circle philo-icon-2">
+                <a  href=""><i class="fa-brands fa-facebook-f philo-icons"></i></a>
+             </div>
+             <div class="rounded-circle philo-icon-3">
+                <a href=""><i class="fa-brands fa-pinterest philo-icons"></i></a>
+             </div>
+             <div class="rounded-circle philo-icon-4">
+                <a href=""><i class="fa-brands fa-youtube philo-icons"></i></a>
+             </div>
+                
+                
+                </div>
+                <div class="col-md-7 col-sm-12 philo-pic">
+                     <img class="align-items-left justify-content-left" src="./image/philo-pic.jpg" alt="">
+                     <div class="philo-pic-text">
+                        <h3 class="philo-text-heading">OUR TRAVEL PHILOSOPHY</h2>
+                        <button class="philo-text-button">READ MORE</button>
+                     </div>
+                </div>
+            </div>
+           
+          </div>
+     </section>
+     <section id="logo-image">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 img-part">
+                    <img  src="./image/logo-inisde-site.png" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- latest from blog -->
+     <section id="latest">
+        <div class="container ">
+            <hr>
+            <div class="row" style="margin-top: 150px;">
+                <h3 class="latest-title">LATEST FROM THE BLOG</h3>
+                <div class="col-md-3 col-sm-12">
+                  <a href="">
+                    <div class="card border-0" >
+                     <img src="./image/latest-pic-1.jpg" alt="">
+                      <div class="card-body">
+                        <p class="card-text">THE 14 BEST BEACHES IN TROPEA - AND HOW TO VISIT THEM
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                    
+                </div>
+                <div class="col-md-3 col-sm-12">
+                  <a href="">
+                    <div class="card border-0" >
+                      <img src="./image/latest-pic-2.jpg" alt="">
+                      <div class="card-body">
+                        <p class="card-text">HOW TO VISIT CAPO VATICANO IN CALABRIA + WHERE TO STAY</p>
+                      </div>
+                    </div>
+                  </a>
+                    
+                </div>
+            
+                <div class="col-md-3 col-sm-12">
+                  <a href="">
+                    <div class="card border-0" >
+                      <img src="./image/latest-pic-3.jpg" style="height: 203.337px;" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">THE BEST THINGS TO DO IN TROPEA, ITALY | THE PEARL OF CALABRIA</p>
+                      </div>
+                    </div>
+                  </a>
+                    
+                </div>
+                <div class="col-md-3 col-sm-12">
+                  <a href="">
+                    <div class="card border-0" >
+                      <img src="./image/latest-pic-4.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">13 WONDERFUL THINGS TO DO IN LECCE | PUGLIA'S BAROQUE MASTERPIECE</p>
+                      </div>
+                    </div>
+                  </a>
+                    
+                </div>
+
+            </div>
+             <h3 class="philo-text-heading" style="margin-top: 60px;">LOOKING FOR SOMEWHERE IN PARTICULAR?</h3>
+             <div class="input-group align-items-center justify-content-center d-flex mt-5" >
+              <button type="button" class="btn border-0 search-bar-button" >
+                <i class="fas fa-search"></i>
+                
+              </button>
+              
+              <div class="form-outline">
+                <input   type="search" id="form1" class="form-control  search-bar border-0" placeholder="search" />
+            
+               
+              </div>
+             
+            </div>
+        </div>
+     </section>
+
+     <!-- signup -->
+
+     <section id="sign-up " style="margin-top: 100px;">
+      
+      
+        
+          <div class=" sign-up-description" style="width: 100vw; height: 576px;">
+            <div class="col-md-12 col-sm-12">
+              <img src="./image/signup-background.jpg" alt="" style="width: 100%;height: 100%;">
+              <div class="signup-portion">
+                <p class="signup-para">OUR MONTHLY NEWSLETTER FOR THE</p><br>
+                <h1 class="signup-heading">CONSTANTLY CURIOUS</h1>
+                <a class="signup-link" href="">Sign Up</a>
+              </div>
+            </div>
+           
+            
+          </div>
+           
+        
+       
+     
+     </section>
+
+     <!-- italy -->
+     <section id="sign-up mt-0">
+      
+      <div class=" italy-background" style="width: 100vw; height: 576px;">
+       
+        <div class="col-md-12 col-sm-12">
+          <img src="./image/italy-pic.jpg" alt="" style="width: 100%;height: 100%;" >
+          <div class="italy-portion">
+            <p class="signup-para">PLAN FOR THE PERFECT SUMMER</p><br>
+            <h1 class="signup-heading">ITALY</h1>
+          </div>
+         
+         
+        </div>
+        
+       
+      </div>
+     </section>
+
+<!-- wonderful -->
+
+      <section id="wonderful">
+        <div class="container-sm">
+          <p class="wonderful-para-1 text-center ">The European country to which we return again and again, each time discovering a new treasure or deeper appreciation.</p>
+          <p class="wonderful-para-2 text-center">Start planning for your own escape to Italy with our destination guides below, or visit our <a href="">Italy</a> page for more on Puglia, the Dolomites, and beyond.</p>
+          <div class="row" style="padding-left: 105px;padding-right: 98px; margin-top: 80px;">
+            <div class="col-md-4 col-sm-12" style="height: 397px;">
+              <div class="card" style="height: 100%;width: 317px;" >
+                <img class="card-img-top" src="./image/wonderful-pic-1.jpg" alt="Card image cap" style="height: 100%;">
+                 <div class="wonderful-content">
+                    <h3 class="wonderful-pic-heading">13 WONDERFUL <br> THINGS TO DO IN <br> CICILY</h3>
+                 </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12" style="height: 397px;">
+              <div class="card" style="height: 100%;width: 317px;" >
+                <img class="card-img-top" src="./image/wonderful-pic-2.jpg" alt="Card image cap" style="height: 100%;">
+                <div class="wonderful-content">
+                  <h3 class="wonderful-pic-heading">13 WONDERFUL <br> THINGS TO DO IN <br> CINQUE TERRE  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12" style="height: 397px; ">
+              <div class="card" style="height: 100%;width: 317px;" >
+                <img class="card-img-top" src="./image/wonderful-pic-3.jpg" alt="Card image cap" style="height: 100%;">
+                <div class="wonderful-content">
+                  <h3 class="wonderful-pic-heading">13 WONDERFUL <br> THINGS TO DO IN <br> VENICE  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- north coast -->
+      <section id="north-coast" style="margin-top: 100px;">
+        <div class="col-md-12 col-sm-12 north-coast-div">
+              <img src="./image/North-coast-image.jpg" alt="">
+              <div class="north-coast-content">
+                <p class="signup-para">DISCOVER THE UK’S BEST ROAD TRIP</p>
+                <h3 class="signup-heading" style="margin-top: 20px;">THE NORTH COAST 500</h3>
+              </div>
+        </div>
+      </section>
+
+      <section id="north-coast-pics">
+        <div class="container">
+          <p class=" north-coast-para-1">The road circling the Scottish Highlands has always existed, the single-tracks and winding lanes long providing a lifeline to farmers, fishermen and <br> villagers along the coast. However, for years, it was without a name - and anyone who has dreamed of driving a cadillac along Route 66 knows <br> just how important that can be.</p>
+          <p class="north-coast-para-2">If you’re looking for a great British adventure this summer, add the North Coast 500 to your list</p>
+          <div class="row" style="margin-top: 70px; padding-left: 130px;padding-right: 130px; margin-bottom: 100px;">
+            
+              <div class="col-md-4 col-sm-12" >
+                <a href="">
+                  <div class="card " >
+                    <img class="card-img-top" src="./image/north-coast-pic-1.jpg" alt="Card image cap" style="height: 100%;">
+                     <div class="North-coast-pic-content">
+                        <h3 class="northcoast-pic-heading">THE ULTIMATE NC500 ROUTE AND HOW TO PLAN YOUR OWN</h3>
+                     </div>
+                  </div>
+                </a>
+               
+              </div>
+          
+              <div class="col-md-4 col-sm-12" >
+                <a href="">
+                  <div class="card" >
+                    <img class="card-img-top" src="./image/north-coast-pic-2.jpg" alt="Card image cap" style="height: 100%;">
+                     <div class="North-coast-pic-content">
+                        <h3 class="northcoast-pic-heading">WHERE TO STAY ALONG THE NC 500</h3>
+                     </div>
+                  </div>
+                </a>
+                
+              </div>
+
+              <div class="col-md-4 col-sm-12" >
+                <a href="">
+                  <div class="card" >
+                    <img class="card-img-top" src="./image/north-coast-pic-3.jpg" alt="Card image cap" style="height: 100%;">
+                     <div class="North-coast-pic-content">
+                        <h3 class="northcoast-pic-heading">23 THINGS TO KNOW BEFORE DRIVING THE NC500</h3>
+                     </div>
+                  </div>
+                </a>
+                
+              </div>
+
+              <div class="col-md-4 col-sm-12" >
+                <a href="">
+                  <div class="card" >
+                    <img class="card-img-top" src="./image/north-coast-pic-4.jpg" alt="Card image cap" style="height: 100%;">
+                     <div class="North-coast-pic-content">
+                        <h3 class="northcoast-pic-heading">NC500 HIGHLIGHTS WHERE TO FIND THE THINGS YOU,LL LOVE</h3>
+                     </div>
+                  </div>
+                </a>
+               
+              </div>
+
+              <div class="col-md-4 col-sm-12" >
+                <a href="">
+                  <div class="card" >
+                    <img class="card-img-top" src="./image/north-coast-pic-5.jpg" alt="Card image cap" style="height: 100%;">
+                     <div class="North-coast-pic-content">
+                        <h3 class="northcoast-pic-heading">HOW WE FELL IN LOVE WITH THE SCOTTISH HIGHLANDS</h3>
+                     </div>
+                  </div>
+                </a>
+                
+              </div>
+
+              <div class="col-md-4 col-sm-12" >
+                <a href="">
+                  <div class="card" >
+                    <img class="card-img-top" src="./image/north-coast-pic-6.jpg" alt="Card image cap" style="height: 100%;">
+                     <div class="North-coast-pic-content">
+                        <h3 class="northcoast-pic-heading">A BEGINNERS GUIDE TO THE NORTH COAST 500</h3>
+                     </div>
+                  </div>
+                </a>
+                
+              </div>
+
+            
+          </div>
+         
+        </div>
+      </section>
+
+      <!-- the print store -->
+
+      <section id="print-store">
+        <div class="col-md-12 col-sm-12 print-store-pic">
+           <img class="print-store-pic-size" src="./image/print-store-pic.png" alt="">
+           <div class="print-store-content">
+            <h3 class="print-store-heading">THE PRINT STORE</h3>
+            <a class="signup-link" href="">SHOP NOW</a>
+           </div>
+        </div>
+      </section>
+
+      <!-- THE TRAVEL JOURNALS -->
+
+      <section id="travel-journals">
+        <div class="class col-md-12 col-sm-12 travel-journals-pic">
+          <img class="travel-journals-pic-size" src="./image/travel-journals-pic.jpg" style="object-position: center;" alt="">
+          <div class="travel-journals-content">
+            <p class="signup-para">FIND YOUR TRAVEL ESCAPE</p>
+            <h3 class="print-store-heading">THE TRAVEL JOURNALS</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- activities -->
+
+      <section id="activities">
+         <div class="container">
+          <p class="wonderful-para-1 text-center">We are all a combination of the journeys we take and the roads we venture down, whether it’s alone or together.</p>
+          <p class="wonderful-para-2 text-center">These are some of our most memorable escapes, or our favourite entries on coffee-stained pages.</p>
+          <div class="row" style="margin-top: 80px;padding-left: 100px;padding-right: 100px;">
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0">
+                <a href=""><img class="card-img-top" src="./image/activty-pic-1.jpg" alt="Card image cap"></a>
+                
+                <div class="card-body">
+                  <p class="card-text">WHERE THE FORGOTTEN ANIMALS OF BOLIVIA ARE LOVED</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0">
+                <a href=""> <img class="card-img-top" src="./image/activity-pic-2.jpg" alt="Card image cap"></a>
+               
+                <div class="card-body">
+                  <p class="card-text">THE BASQUE COUNTRY | MORE THAN JUST THE BILBOA EFFECT</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0">
+                <a href="">   <img class="card-img-top" src="./image/activity-pic-4.jpg" alt="Card image cap"></a>
+             
+                <div class="card-body">
+                  <p class="card-text">HORSE RIDING IN URUGUAY | A TALE OF TWO DREAMS</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0">
+                <a href=""><img class="card-img-top" src="./image/activity-pic-5.jpg" alt="Card image cap"></a>
+                
+                <div class="card-body">
+                  <p class="card-text">OUR NIGHT IN THE SAHARA DESERT</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0">
+                <a href=""> <img class="card-img-top" src="./image/activity-pic-6.jpg" alt="Card image cap"></a>
+               
+                <div class="card-body">
+                  <p class="card-text">CHERNOBYL | DISCOVERING SECRETS IN THE SNOW</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0">
+                <a href=""> <img class="card-img-top" src="./image/activity-pic-7.jpg" alt="Card image cap"></a>
+               
+                <div class="card-body">
+                  <p class="card-text">THREE MORNINGS IN SWITZERLAND | A HIKING STORY</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0">
+                <a href=""><img class="card-img-top" src="./image/activity-pic-8.jpg" alt="Card image cap"></a>
+                
+                <div class="card-body">
+                  <p class="card-text">WAITING FOR THE CONDORS TO SOAR IN BOLIVIA</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0">
+                <a href=""><img class="card-img-top" src="./image/activity-pic-9.jpg" alt="Card image cap"></a>
+                
+                <div class="card-body">
+                  <p class="card-text">BEAUTY, BRAS AND BACKPACKING | BEING A GIRL ON A BUDGET</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0">
+                <a href=""> <img class="card-img-top" src="./image/activity-pic-10.jpg" alt="Card image cap"></a>
+               
+                <div class="card-body">
+                  <p class="card-text">THE KINDNESS OF KERALA</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0">
+                <a href=""><img class="card-img-top" src="./image/activity-pic-11.jpg" alt="Card image cap"></a>
+                
+                <div class="card-body">
+                  <p class="card-text">ANTWERP ARRIVALS</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0">
+                <a href=""> <img class="card-img-top" src="./image/activity-pic-12.jpg" alt="Card image cap"></a>
+               
+                <div class="card-body">
+                  <p class="card-text">A VERY WEST SWEDEN SUMMER</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="card border-0">
+                <img class="card-img-top" src="./image/activity-pic-13.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">THE ST PETE REVIVAL STORY</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+         </div>
+      </section>
+
+      <!-- our story -->
+
+      <section id="our-story" style="margin-top: 100px;">
+        <div class="col-md-12 col-sm-12 our-story-pic">
+             <img class="our-story-pic-size" src="./image/our-story-pic.jpg" alt="">
+             <div class="our-story-content">
+                   <p class="signup-para">NEW TO ALONG DUSTY ROADS?</p>
+                   <h3 class="signup-heading">DISCOVER OUR STORY</h3>
+                   <button class="story-button">CLICK HERE</button>
+             </div>
+        </div>
+      </section>
+
+      <!-- peru -->
+
+      <section id="peru" style="margin-top: 100px;">
+        <div class="container">
+          <h4 class="peru-heading">CAN YOU PERU?</h4>
+          <p class="north-coast-para-1" style="margin-top: 30px;">There’s much much more to Peru than Machu Picchu, but that’s not a bad place to start either.</p>
+          <p class="north-coast-para-2">Start with our guides, or visit our dedicated <a href="" class="peru-link">Peru page</a> .</p>
+          <div class="row" style="padding-left: 150px;padding-right: 150px; margin-top: 30px;">
+            <div class="col-md-3 col-sm-12">
+              <div class="card border-0" >
+                <a href=""> <img class="card-img-top" src="./image/peru-pic-1.jpg" alt="Card image cap"></a>
+               
+                <div class="card-body">
+                  <h5 class="card-title">HUARAZ</h5>
+                  <p class="card-text">Peru’s ultimate hiking destination, this is where you will find glacier peaks and impossibly blue lakes</p>
+                  <button class="peru-button">READ MORE</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-12">
+              <div class="card border-0" >
+                <a href=""> <img class="card-img-top" src="./image/peru-pic-2.jpg" alt="Card image cap"></a>
+                <div class="card-body">
+                  <h5 class="card-title">THE INCA TRAIL</h5>
+                  <p class="card-text">The most magical way to arrive at Machu Picchu, there’s a reason this hike is so popular</p>
+                  <button class="peru-button">READ MORE</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-12">
+              <div class="card border-0" >
+                <a href=""> <img class="card-img-top" src="./image/peru-pic-3.jpg" alt="Card image cap"></a>
+                <div class="card-body">
+                  <h5 class="card-title">PARACAS</h5>
+                  <p class="card-text">Between the desert and the sea, Paracas offers an alternative travel experience in Peru </p>
+                  <button class="peru-button">READ MORE</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-12">
+              <div class="card border-0" >
+                <a href=""> <img class="card-img-top" src="./image/peru-pic-4.jpg" alt="Card image cap"></a>
+                <div class="card-body">
+                  <h5 class="card-title">CUSCO</h5>
+                  <p class="card-text">After nine days there, we know how you should spend your time in the famous Incan capital.</p>
+                  <button class="peru-button">READ MORE</button>
+                 </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <!-- travel-resources -->
+
+      <section id="travel-resources" style="margin-top: 100px;">
+        <div class="col-md-12 col-sm-12 travel-resources-pic">
+          <img class="travel-resources-pic-size" src="./image/travel-resource-pic.jpg" alt="">
+          <div class="travel-resources-content">
+            <p class="signup-para" style="margin-top: 20px;">TRAVEL RESOURCES</p>
+            <h3 class="signup-heading">TRAVEL MORE, TRAVEL BETTER</h3>
+            <a class="signup-link" href="">CLICK HERE</a>
+          </div>
+         
+        </div>
+      </section>
+
+      <!-- instagram -->
+
+      <section id="instagram" style="margin-top: 30px;">
+        <div class="container">
+          <h4 class="peru-heading">FOLLOW US ON INSTAGRAM</h4>
+          <div class="row" style="margin-top: 30px; padding-left: 150px;padding-right: 150px;">
+            <div class="col-md-2 .col-sm-6 instagram-pic">
+              <div style="width: 161px;height: 161px;" >
+                <a href="">
+                  <img class="card-img-top instagram-pic-size" style="width: 100%;height: 100%;" src="./image/insta-pic-1.jpeg" alt="Card image cap">
+                </a>
+                
+                
+              </div>
+            </div>
+
+            <div class="col-md-2 .col-sm-6 instagram-pic">
+              <div  style="width: 161px;height: 161px;" >
+                
+               <a href="">
+                <img src="./image/insta-pic-2.jpeg" style="width: 100%;height: 100%;" alt="">
+               </a>
+                
+              </div>
+            </div>
+
+            <div class="col-md-2 .col-sm-6 instagram-pic">
+              <div  style="width: 161px;height: 161px;" >
+                <a href="">
+                  <img class="card-img-top instagram-pic-size" style="width: 100%;height: 100%;" src="./image/insta-pic-3.jpeg" alt="Card image cap">
+
+                </a>
+                
+              </div>
+            </div>
+
+            <div class="col-md-2 .col-sm-6 instagram-pic">
+              <div  style="width: 161px;height: 161px;"  >
+                <a href="">
+                  <img class="card-img-top instagram-pic-size" style="width: 100%;height: 100%;" src="./image/insta-pic-4.jpeg" alt="Card image cap">
+
+                </a>
+                
+              </div>
+            </div>
+
+            <div class="col-md-2 .col-sm-6 instagram-pic">
+              <div  style="width: 161px;height: 161px;"  >
+                <a href="">
+                  <img class="card-img-top instagram-pic-size" style="width: 100%;height: 100%;" src="./image/insta-pic-5.jpeg" alt="Card image cap">
+                </a>
+                
+                
+              </div>
+            </div>
+
+            <div class="col-md-2 .col-sm-6 instagram-pic">
+              <div  style="width: 161px;height: 161px;"  >
+                <a href="">
+                  <img class="card-img-top instagram-pic-size" style="width: 100%;height: 100%;" src="./image/insta-pic-6.jpeg" alt="Card image cap">
+                </a>
+                
+                
+              </div>
+            </div>
+
+            
+          </div>
+          <p class="insta-para" style="margin-top: 100px;">Please note that some links on our blog are affiliate links</p>
+          <p class="insta-para" >If you choose to purchase through these links, we may receive a small commission at no extra cost to you. By using these, you are directly <br> supporting Along Dusty Roads to remain an independent travel blog, and to create free guides to help you travel more, travel better.</p>
+          <p class="insta-para">If you’ve really enjoyed our guides, you can buy us a ‘virtual’ coffee <a class="signup-link" style="color: black; text-transform: none;letter-spacing: 0.35px;" href="">here</a> . </p>
+        </div>
+      </section>
+
+      <!-- footer -->
+
+      <footer id="link-footer" style="margin-top: 30px;">
+        
+          <div class="link-container">
+            <a href="">home</a>
+            <a href="">contact us</a>
+            <a href="">work with us</a>
+            <a href="">disclaimer and privacy policy</a>
+          </div>
+         
+       
+
+      </footer>
+
+      <footer id="main-footer">
+        <div class="container"   >
+          <div class="row" style="padding-top: 70px;padding-bottom: 0%;">
+          <div class="col-md-4 col-sm-12 text-center" style="padding-top: 100px; padding: 30px;height: 410px;" >
+             <img src="./image/logo-footer.png" alt="" width="100%">
+             <p class="logo-para" style="color: black;padding-top: 50px;">Along Dusty Roads is a travel blog by British couple, Andrew & Emily</p>
+             <p class="logo-para" style="color: black;">It promotes sustainable and responsible travel for the curious modern day explorer</p>
+            
+             <p class="logo-para" style="color: black;">· <a class="signup-link" style="color: black; text-transform: none;letter-spacing: 0.35px;line-height: 27.2px;" href="">buy us a coffee</a>  ·</p>
+          <div>
+             <div class="rounded-circle philo-icon-1" style="margin-left: 80px;">
+              <a href=""><i class="fa-brands fa-instagram philo-icons"></i></a>
+           </div>
+           <div class="rounded-circle philo-icon-2" style="margin-left: 80px;">
+              <a href=""><i class="fa-brands fa-facebook-f philo-icons"></i></a>
+           </div>
+           <div class="rounded-circle philo-icon-3" style="margin-left: 80px;">
+              <a href=""><i class="fa-brands fa-pinterest philo-icons"></i></a>
+           </div>
+           <div class="rounded-circle philo-icon-4" style="margin-left: 80px;">
+              <a href=""><i class="fa-brands fa-youtube philo-icons"></i></a>
+           </div>
+          </div>
+          
+          
+            </div>
+
+            <div class="col-md-4 col-sm-12 text-center" style="padding-top: 100px; padding: 30px;height: 410px;" >
+                <h3 class="country-heading">DESTINATIONS</h3><br>
+                <a class="country-links" href="">italy</a><br><br>
+                <a class="country-links"  href="">jordan</a><br><br>
+                <a class="country-links"  href="">peru</a><br><br>
+                <a class="country-links"  href="">colombia</a><br><br>
+                <a class="country-links"  href="">cambodia</a><br><br>
+                <a class="country-links"  href="">everywhere</a><br>
+
+            </div>
+
+            <div class="col-md-4 col-sm-12 text-center" style="padding-top: 100px; padding: 30px;height: 410px;" >
+              <br><br>
+                <h4 class="copyright-heading">newsletter</h4><br><br>
+                <input class="copyright-input" type="text" placeholder="Email Address"><br><br>
+                <button class="copyright-button">sign up</button><br><br><br><br><br><br>
+                <p class="logo-para">© Along Dusty Roads Ltd 2014-2023</p>
+
+          </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
